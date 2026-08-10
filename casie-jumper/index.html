@@ -11,7 +11,11 @@
 </head>
 <body>
   <canvas id="game"></canvas>
-  <input id="name-input" type="text" maxlength="16" autocomplete="off" autocapitalize="characters" dir="ltr"
+  <!-- enterkeyhint labels the soft keyboard's action key "Done" instead of a bare return
+       arrow; Enter/Done confirms the name, which is what makes it possible to submit on a
+       phone without reaching the on-canvas OK button under the keyboard. -->
+  <input id="name-input" type="text" maxlength="16" autocomplete="off" autocapitalize="characters"
+    enterkeyhint="done" dir="ltr"
     style="position:fixed;left:0;top:0;opacity:0;width:1px;height:1px;pointer-events:none;">
   <div id="rotate-overlay">
     <p>Please rotate your device to landscape mode</p>
