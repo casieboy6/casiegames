@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>Casie Catcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <!-- enterkeyhint labels the soft keyboard's action key "Done" instead of a bare return
+       arrow; Enter/Done confirms the name, which is what makes it possible to submit on a
+       phone without reaching the on-canvas OK button under the keyboard. -->
+  <input id="name-input" type="text" maxlength="16" autocomplete="off" autocapitalize="characters"
+    enterkeyhint="done" dir="ltr"
+    style="position:fixed;left:0;top:0;opacity:0;width:1px;height:1px;pointer-events:none;">
+  <div id="rotate-overlay">
+    <p>Please rotate your device to landscape mode</p>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
